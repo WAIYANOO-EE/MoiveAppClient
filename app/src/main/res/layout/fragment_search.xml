@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchFragment">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_margin="@dimen/dp_20">
+           <include
+               android:id="@+id/ads"
+               layout="@layout/largebanner"/>
+
+           <EditText
+               android:layout_marginTop="10dp"
+               android:id="@+id/search"
+               android:layout_below="@+id/ads"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:paddingLeft="10dp"
+               android:paddingRight="10dp"
+               android:drawableRight="@drawable/ic_search"
+               android:drawableTint="@color/colorPrimaryDark"
+               android:background="@drawable/edtbg"
+               android:hint="Search . . ." />
+
+           <TextView
+               android:id="@+id/txtMovies"
+               style="@style/TitleStyle"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/search"
+               android:text="All Movies" />
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/rcvMovies"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/txtMovies"
+               android:layout_marginTop="108dp" />
+
+           <TextView
+               android:id="@+id/txtSeries"
+               style="@style/TitleStyle"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/rcvMovies"
+               android:text="All Series" />
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/rcvSeries"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/txtSeries" />
+
+       </RelativeLayout>
+   </ScrollView>
+    <FrameLayout
+        android:layout_alignParentBottom="true"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adContainer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    </FrameLayout>
+
+</RelativeLayout>

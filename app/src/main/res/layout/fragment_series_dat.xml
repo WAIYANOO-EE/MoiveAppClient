@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SeriesDatFragment">
+
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <include
+             android:id="@+id/ads"
+             layout="@layout/largebanner"/>
+         <LinearLayout
+             android:layout_marginTop="10dp"
+             android:layout_below="@id/ads"
+             android:id="@+id/seriesView"
+             android:layout_width="match_parent"
+             android:layout_height="@dimen/heightItem"
+             android:orientation="horizontal">
+             <ImageView
+                 android:id="@+id/image"
+                 android:layout_width="@dimen/widthItem"
+                 android:layout_height="@dimen/heightItem"
+                 android:src="@drawable/defenders"/>
+
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/heightItem"
+                 android:id="@+id/seriesName"
+                 android:layout_weight="1"
+                 style="@style/TitleStyle"
+                 android:text="Series Name"
+                 android:textColor="@color/colorPrimaryDark"/>
+         </LinearLayout>
+         <androidx.recyclerview.widget.RecyclerView
+             android:layout_below="@+id/seriesView"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:id="@+id/epList"/>
+
+     </RelativeLayout>
+ </ScrollView>
+    <FrameLayout
+        android:layout_alignParentBottom="true"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adContainer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    </FrameLayout>
+</RelativeLayout>

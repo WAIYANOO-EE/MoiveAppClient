@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RequestFragment">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_margin="15dp">
+
+           <include
+               android:id="@+id/ads"
+               layout="@layout/largebanner"/>
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:id="@+id/circularImage"
+               android:layout_below="@+id/ads"
+               android:layout_width="100dp"
+               android:layout_height="100dp"
+               android:layout_centerHorizontal="true"
+               android:layout_margin="30dp"
+               android:elevation="25dp"
+               android:src="@drawable/request" />
+
+           <TextView
+               android:id="@+id/name"
+               style="@style/TitleStyle"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/circularImage"
+               android:text="Movie Name" />
+
+           <EditText
+               android:id="@+id/etName"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:layout_below="@+id/name"
+               android:background="@drawable/edtbg"
+               android:hint="Movie Name"
+               android:padding="10dp" />
+
+           <TextView
+               android:id="@+id/imageLink"
+               style="@style/TitleStyle"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/etName"
+               android:text="Image Link" />
+
+           <EditText
+               android:id="@+id/etImageLink"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:layout_below="@+id/imageLink"
+               android:background="@drawable/edtbg"
+               android:hint="Image Link"
+               android:padding="10dp" />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/etImageLink"
+               android:layout_margin="20dp"
+               android:orientation="horizontal">
+
+               <Button
+                   android:id="@+id/send"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:layout_margin="10dp"
+                   android:layout_weight="1"
+                   android:background="@color/successColor"
+                   android:text="Send"
+                   android:textColor="@color/colorWhite" />
+
+               <Button
+                   android:id="@+id/cancel"
+                   android:layout_width="match_parent"
+                   android:layout_height="50dp"
+                   android:layout_margin="10dp"
+                   android:layout_weight="1"
+                   android:background="@color/errorColor"
+                   android:text="Cancel"
+                   android:textColor="@color/colorWhite" />
+           </LinearLayout>
+
+       </RelativeLayout>
+   </ScrollView>
+    <FrameLayout
+        android:layout_alignParentBottom="true"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adContainer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    </FrameLayout>
+
+</RelativeLayout>

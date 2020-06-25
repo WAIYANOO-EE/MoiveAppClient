@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Movie Box</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ref_slides">slides</string>
+    <string name="slide_ref">slides</string>
+    <string name="genre_ref">genres</string>
+    <string name="movie_ref">movies</string>
+    <string name="series_ref">series</string>
+    <string name="requests">requests</string>
+    <string name="episodes">episodes</string>
+    <string name="Home_frag">Home</string>
+    <string name="Movie_frag">Movie</string>
+    <string name="Series_frag">Series</string>
+    <string name="Search_frag">Search</string>
+    <string name="Request_frag">Request</string>
+    <string name="About_frag">About</string>
+    <string name="series_dat">Series Dat</string>
+    <string name="video_det">Video Det</string>
+    //Test Ads
+    <string name="app_Id">ca-app-pub-9372372238168862~1201882712</string>
+    <string name="banner_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="native_id">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="reward_id">ca-app-pub-3940256099942544/5224354917</string>
+
+    //Real Ads
+    <!-- <string name="app_Id">ca-app-pub-3488852963381882~5336212969</string>
+    <string name="banner_unit_id">ca-app-pub-3488852963381882/2836180310</string>
+    <string name="interstitial_id">ca-app-pub-3488852963381882/2644608624</string>
+    <string name="native_id">ca-app-pub-3488852963381882/7513791926</string>
+    <string name="reward_id">ca-app-pub-3488852963381882/3766118606</string>-->
+</resources>

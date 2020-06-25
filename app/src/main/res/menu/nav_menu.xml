@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/home_menu"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/movie_menu"
+        android:title="Movie"
+        android:icon="@drawable/ic_movie"/>
+    <item
+        android:id="@+id/series_menu"
+        android:title="Series"
+        android:icon="@drawable/ic_series"/>
+    <item
+        android:id="@+id/search_menu"
+        android:title="Search"
+        android:icon="@drawable/ic_search"/>
+    <item
+        android:id="@+id/request_menu"
+        android:title="Request"
+        android:icon="@drawable/ic_requrest"/>
+    <item
+        android:id="@+id/share_menu"
+        android:title="Share"
+        android:icon="@drawable/ic_share"/>
+    <item
+        android:id="@+id/about_menu"
+        android:title="About"
+        android:icon="@drawable/ic_about"/>
+
+</menu>

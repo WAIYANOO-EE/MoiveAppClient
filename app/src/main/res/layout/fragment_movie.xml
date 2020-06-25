@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/ads"
+                layout="@layout/largebanner"/>
+            <recycler.coverflow.RecyclerCoverFlow
+                android:layout_below="@+id/ads"
+                android:id="@+id/rcvTenMovies"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/heightItem">
+            </recycler.coverflow.RecyclerCoverFlow>
+
+            <TextView
+                android:id="@+id/txtMovies"
+                android:layout_below="@+id/rcvTenMovies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="All Movies"
+                style="@style/TitleStyle"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvMovies"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txtMovies" />
+
+        </RelativeLayout>
+    </ScrollView>
+    <FrameLayout
+        android:layout_alignParentBottom="true"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adContainer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    </FrameLayout>
+</RelativeLayout>
